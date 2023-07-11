@@ -1,0 +1,8 @@
+<nav>
+  <%= link_to "Mode Keymaps", "/modes/#{@mode.id}/keymaps" %>
+</nav>
+
+<h1><%= @mode.name %></h1>
+<p>Variations: <%= @mode.variations %></p>
+<p>Dangerous: <%= @mode.dangerous %></p>
+<p><%= link_to "Update #{@mode.name} Mode", "/modes/#{@mode.id}/edit", method: :get %></p>

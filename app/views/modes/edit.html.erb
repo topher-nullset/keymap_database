@@ -1,0 +1,12 @@
+<%= form_with url: "/modes/#{@mode.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :dangerous %>
+  <%= form.check_box :dangerous %><br>
+
+  <%= form.label :variations %>
+  <%= form.number_field :variations %><br>
+
+  <%= form.submit 'Update Mode' %>
+<% end %>

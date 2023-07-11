@@ -1,0 +1,11 @@
+<nav>
+  <%= link_to "New Mode", "/modes/new" %>
+</nav>
+
+<h1>Modes</h1>
+<% @modes.each do |mode| %>
+  <p>Mode: <%= mode.name %> |
+    Keymaps: <%= mode.keymaps.count%> |
+    <%= mode.created_at%>
+  </p>
+<% end %>

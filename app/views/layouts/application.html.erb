@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CustomKeymaps</title>
+    <title>Custom Keymaps</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <nav>
+      <!-- Other navigation links -->
+      <%= link_to "Modes", modes_path %>
+      <%= link_to "Keymaps", keymaps_path %>
+    </nav>
     <%= yield %>
   </body>
 </html>

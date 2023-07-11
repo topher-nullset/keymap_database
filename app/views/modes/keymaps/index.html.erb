@@ -1,0 +1,7 @@
+<nav>
+  <%= link_to "Create #{@mode.name} Keymap", "/modes/#{@mode.id}/keymaps/new" %>
+</nav>
+<h1>Keymaps for <%= @mode.name %> Mode</h1>
+<% @mode.keymaps.each do |keymap| %>
+  <p><%= keymap.label %></p>
+<% end %>

@@ -1,0 +1,15 @@
+<%= form_with url: "/modes/#{@mode.id}/keymaps", method: :post, local: true do |form| %>
+  <%= form.label :label %>
+  <%= form.text_field :label %><br>
+
+  <%= form.label :keys %>
+  <%= form.text_field :keys %><br>
+
+  <%= form.label :keymap_len %>
+  <%= form.number_field :keymap_len %><br>
+
+  <%= form.label :specific %>
+  <%= form.check_box :specific %><br>
+
+  <%= form.submit "Create Keymap" %>
+<% end %>
